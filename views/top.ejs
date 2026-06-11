@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Scrub Brush</title>
+    <link rel="stylesheet" href="/public/css/main.css?ver=202605040">
+</head>
+
+<body>
+    <h1>
+        タワシ販売サイト
+    </h1>
+    <img id="top_image" src="/public/images/tawashi.png">
+    <p>
+        在庫がある場合には注文していただけます。
+    </p>
+    <p>
+        現在の在庫数: <%= stock %>
+    </p>
+
+    <form action="order" method="post">
+        注文数: <input type="number" name="order" min="1" step="1" required>
+        <input type="submit" value="注文">
+    </form>
+    <p>
+    </p>
+
+</body>
+
+</html>
